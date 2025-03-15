@@ -11,6 +11,8 @@ def start():
         print("6. Word counter")
         print("0. Exit program")
         your_choice = int(input("Enter your choice:"))
+
+        #Coding of prime number sum
         if your_choice==1:
             def prime_number(number):
                 if number < 2:
@@ -25,6 +27,7 @@ def start():
             end = int(input("Enter end of range:"))
             print("Sum of prime number's in range:", sum_prime(start,end))
 
+        #Length unit converter
         elif your_choice==2:
             value = float(input("Enter value:"))
             direction = input("Enter direction(M/F):")
@@ -35,12 +38,14 @@ def start():
             else:
                 converted_value = "Invalid direction"
             print(f"Converted value:{converted_value}")
-
+        
+        #Consonant counter
         elif your_choice==3:
             text = input("Enter a text string:")
             count_consonants = lambda text: sum(1 for char in text.lower()if char.isalpha()and char not in "aeiou")
             print("Number of consonants:",count_consonants(text))
-
+        
+        #Min-Max number finder
         elif your_choice==4:
             def min_max_finder():
                 n = int(input("How many numbers will you enter?"))
@@ -48,7 +53,8 @@ def start():
                 return min(numbers),max(numbers)
             min_value, max_value =min_max_finder()
             print(f"Min: {min_value}, Max:{max_value}")
-
+        
+        #Palindrome checker
         elif your_choice==5:
             def palindrome(text):
                 cleaned_text = re.sub(r'[^a-zA-Z0-9]', '',text).lower()
@@ -56,6 +62,7 @@ def start():
             text= input("Enter a text string:")
             print("Palindrome checker:", palindrome(text))
         
+        #Word counter
         elif your_choice==6:
             def word_counter(file_path):
                 word_list = ["is", "were", "but"]
