@@ -18,9 +18,9 @@ def games():
                 if guesses< value:
                     print("Opps!!....It's too low🔽")
                 elif guesses > value:
-                    print("Ohh!!!...It's too high🔼")
+                    print("Ohh!!...It's too high🔼")
                 else:
-                    print("WOW!!!.. You have guessed the number in", guesses, "attempts")
+                    print("WOW!!.. You have guessed the number in", guesses, "attempts")
                     break
             except ValueError:
                 print("Enter a valid number")
@@ -37,11 +37,11 @@ def games():
             else:
                 print("Computer choice is",computer)
                 if player == computer:
-                    print("OMG!!!... It's a tie🤝")
+                    print("OMG!!... It's a tie🤝")
                 elif (player=="rock" and computer=="paper") or (player=="paper" and computer=="scissor") or (player=="scissor" and computer=="rock"):
-                    print("Sorry!!!.. You loose the game😞")
+                    print("Sorry!!.. You loose the game😞")
                 else:
-                    print("Yes!!!....You won🏆")
+                    print("Yes!!....You won🏆")
                 not_playing=input("Do you want to play again? [yes/no]")
                 if not_playing=="yes":
                     continue
