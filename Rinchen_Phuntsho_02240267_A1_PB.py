@@ -39,7 +39,7 @@ def games():
                 if player == computer:
                     print("OMG!!... It's a tie🤝")
                 elif (player=="rock" and computer=="paper") or (player=="paper" and computer=="scissor") or (player=="scissor" and computer=="rock"):
-                    print("Sorry!!.. You loose the game😞")
+                    print("Sorry!!.. You loose😞")
                 else:
                     print("Yes!!....You won🏆")
                 not_playing=input("Do you want to play again? [yes/no]")
