@@ -1,7 +1,7 @@
 import random
 def games():
     print("Welcome, To the game 🎮")
-    print ("Selct a function (1-3)")
+    print ("Select a function (1-3)")
     print("1. Guess Number Game 🎯\n2. Rock Paper Scissors Game✊✋✌️ \n3. Exit Program ❌ ")
     
     selection = int(input("Enter Your Choice:"))

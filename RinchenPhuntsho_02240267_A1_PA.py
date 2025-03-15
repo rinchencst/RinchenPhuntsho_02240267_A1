@@ -75,9 +75,9 @@ def start():
                     return word_counts
                 except FileNotFoundError:
                     print("Error: The file was not fount.")
-                file_path = input("Enter the file_path:")
+            file_path = input("Enter the file_path:")
 
-                print("word count results:", word_counter(file_path))
+            print("word count results:", word_counter(file_path))
 
         elif your_choice==0:
             print("Exiting program. Goodbye!")
