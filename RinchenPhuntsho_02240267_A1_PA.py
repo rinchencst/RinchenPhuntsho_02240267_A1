@@ -3,7 +3,7 @@ import re
 def start():
     while True:
         print("select a function(1-6):")
-        print("1. Calculate the sum of prime numbes")
+        print("1. Calculate the sum of prime numbers")
         print("2. Convert length units")
         print("3. Count consonantsin string")
         print("4. Find minimum and maximum numbers")
